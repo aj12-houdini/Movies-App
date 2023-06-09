@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Source+Sans+Pro&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  background-color: #000b49;
+  /* text-align: center; */
+}
+
+header {
+  background-color: #041562;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  text-align: center;
+  margin: 10px;
+}
+header .fas {
+  color: white;
+  position: absolute;
+  left: 355px;
+  margin: 10px;
+  top: 5px;
+  font-size: 40px;
+  transform: rotate(0);
+}
+
+.search {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #1a374d;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #000b49;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.562);
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000b49;
+  z-index: -5;
+  filter: blur(0px);
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie {
+  background-color: #292c6d;
+  margin: 2.2rem;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h3 {
+  color: #fff;
+  margin: 0.5rem 1rem 1rem;
+}
+
+.movie-info span {
+  margin: 1rem;
+  background-color: #000b49;
+  color: white;
+  padding: 0.2rem;
+}
+
+.movie-info .green {
+  color: lightgreen;
+}
+
+.movie-info .red {
+  color: red;
+}
+
+.overview {
+  background-color: #eee;
+  position: absolute;
+  max-height: 100%;
+  padding: 1rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  margin: 10px 0 0;
+  padding: 10px 0;
+}
+
+.btn {
+  border: transparent;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #1a374d;
+}
+
+.btn:focus {
+  outline: none;
+  border: 0;
+}
+
+.btn.active {
+  background-color: #292c6d;
+}
+
+footer h4 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 5px 0;
+  margin-right: 20px;
+}
+
+.movie-icon {
+  font-size: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
